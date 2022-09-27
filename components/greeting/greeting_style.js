@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 
     centerText: {
         textAlign: "center",
-        marginTop: 5
+        marginTop: 5,
     }
 });
 
