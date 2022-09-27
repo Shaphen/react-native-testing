@@ -15,11 +15,11 @@ import Welcome from "./components/greeting/welcome";
 
 const App = () => {
   return (
-    <ScrollView>
+    // <ScrollView>
       <View>
         <Welcome />
       </View>
-    </ScrollView>
+    // </ScrollView>
   );
 };
 

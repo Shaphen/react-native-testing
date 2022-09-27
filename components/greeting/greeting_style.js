@@ -4,6 +4,11 @@ const styles = StyleSheet.create({
     container: {
         alignItems: "center",
         justifyContent: "center",
+    },
+
+    centerText: {
+        textAlign: "center",
+        marginTop: 5
     }
 });
 
