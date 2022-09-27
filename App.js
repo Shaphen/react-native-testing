@@ -8,11 +8,13 @@
 
 import React from 'react';
 import { View } from 'react-native';
-import ListView from "./components/main/welcome";
+import ListView from "./components/main/list_view";
+import Header from "./components/header/header";
 
 const App = () => {
   return (
     <View style={{flex: 1}}>
+      <Header />
       <ListView />
     </View>
   );
