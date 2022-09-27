@@ -7,19 +7,14 @@
  */
 
 import React from 'react';
-import {
-  ScrollView,
-  View,
-} from 'react-native';
-import Welcome from "./components/greeting/welcome";
+import { View } from 'react-native';
+import ListView from "./components/main/welcome";
 
 const App = () => {
   return (
-    // <ScrollView>
-      <View>
-        <Welcome />
-      </View>
-    // </ScrollView>
+    <View style={{flex: 1}}>
+      <ListView />
+    </View>
   );
 };
 
