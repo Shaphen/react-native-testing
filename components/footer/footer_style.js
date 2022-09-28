@@ -3,12 +3,11 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     footerContainer: {
         flex: 0,
+        marginVertical: 5,
         justifyContent: 'space-around',
         alignItems: "center",
         flexDirection: "row",
         textAlign: "center",
-        marginBottom: 10,
-        marginTop: -10,
     },
     footerText: {
         flex: 0,

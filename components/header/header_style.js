@@ -5,11 +5,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: "center",
         textAlign: "center",
-        marginBottom: -10
+        marginVertical: 10
     },
 
     headerText: {
-        marginTop: 20,
         fontSize: 23,
         fontWeight: "bold"
     },
