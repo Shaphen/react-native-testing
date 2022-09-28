@@ -2,15 +2,22 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     footerContainer: {
-        justifyContent: 'center',
+        flex: 0,
+        justifyContent: 'space-around',
         alignItems: "center",
+        flexDirection: "row",
         textAlign: "center",
+        marginBottom: 10,
+        marginTop: -10,
     },
-
     footerText: {
-        marginBottom: 20,
-        fontSize: 23,
-        fontWeight: "bold"
+        flex: 0,
+        width: 40,
+        fontSize: 10,
+        fontWeight: "bold",
+        flexDirection: "column",
+        textAlign: "center",
+        flexWrap: "wrap",
     },
 });
 
