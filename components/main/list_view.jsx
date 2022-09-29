@@ -7,10 +7,16 @@ const ListView = () => {
     const [response, setResponse] = useState([]);
 
     const getCatFact = () => {
-        return fetch("https://datausa.io/api/data?drilldowns=Nation&measures=Population")
+        return fetch("https://jikan1.p.rapidapi.com/top/anime/1/bypopularity", {
+            method: "GET",
+            headers: {
+                'X-RapidAPI-Key': '081939f8famshaf7178bffd3b183p1f7014jsn5e35874c4d00',
+                'X-RapidAPI-Host': 'jikan1.p.rapidapi.com'
+            }
+        })
         .then(response => response.json())
         .then(jsonData => {
-            setResponse(jsonData.data);
+            setResponse(jsonData.top);
             setLoading(false);
         }).catch(error => {
             console.error(error);
@@ -33,9 +39,14 @@ const ListView = () => {
                         keyExtractor={item => item.Population}
                         renderItem={({ item }) => (
                             <Text style={ styles.item }>
-                                Nation: { item.Nation }, { "\n" }
-                                Year: { item.Year }, { "\n" }
-                                Population: { item.Population }
+                                Title: { item.title } { "\n" }
+                                Rank: { item.rank } { "\n" }
+                                Start Date: { 
+                                    item.start_date ? item.start_date : "TBA" 
+                                } { "\n" }
+                                End Date: { 
+                                    item.end_date ? item.end_date : "TBA" 
+                                }
                             </Text>
                         )}
                     />
